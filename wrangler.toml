@@ -1,6 +1,11 @@
 name = "frontend1"
 pages_build_output_dir = "./dist"
 
+[durable_objects]
+bindings = [
+    { name = "VOTE_COUNTER", class_name = "VoteCounter",script_name = "worker" }
+]
+
 # [vars]
 # MY_VAR = "my-variable"
 
